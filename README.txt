@@ -14,6 +14,11 @@ Instructions for use:
 	-Java 15 or later must be installed to ensure that the application can function.
 	-Separate installation of JavaFX is not required for the application to function via "MAP+.jar".
 
+Notes for GitHub:
+	-Jar file is too large to upload to GitHub.
+	-Project can be launched in IntelliJ IDEA from "MAP+.iml"
+	-Global dependency on JavaFX must be reestablished with a local copy of JavaFX SDK for program to run in this way
+
 Developed using:
 IntelliJ IDEA Community Edition 2020.3
 JDK-15.0.1
