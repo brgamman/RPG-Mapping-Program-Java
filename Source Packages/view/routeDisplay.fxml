@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="routeDisplayAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.routeDisplayController">
+   <children>
+      <Label layoutX="92.0" layoutY="24.0" prefHeight="54.0" prefWidth="415.0" text="Multiversal Atlas Program +" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="103.0" prefHeight="42.0" prefWidth="462.0" text="Displaying the shortest route between your specified point of origin and destination:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="252.0" prefHeight="42.0" prefWidth="483.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" layoutX="36.0" layoutY="514.0" mnemonicParsing="false" onAction="#returnButtonListener" prefHeight="54.0" prefWidth="199.0" text="Return to Main Menu">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="routeTable" layoutX="31.0" layoutY="145.0" prefHeight="309.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="routeStop" prefWidth="96.800048828125" text="Stop Number" />
+          <TableColumn fx:id="routePlanet" prefWidth="188.0" text="Planet" />
+            <TableColumn fx:id="routeUniverse" prefWidth="87.99993896484375" text="Universe" />
+            <TableColumn fx:id="routeFaction" prefWidth="163.20001220703125" text="Controlling Faction" />
+        </columns>
+      </TableView>
+      <Button fx:id="findRouteButton" layoutX="365.0" layoutY="514.0" mnemonicParsing="false" onAction="#findRouteButtonListener" prefHeight="54.0" prefWidth="199.0" text="Calculate New Route">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

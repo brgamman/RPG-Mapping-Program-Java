@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="threatDisplayAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.threatDisplayController">
+   <children>
+      <Label layoutX="248.0" layoutY="28.0" prefHeight="54.0" prefWidth="415.0" text="Multiversal Atlas Program +" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="94.0" prefHeight="42.0" prefWidth="852.0" text="The planets in your territory vulnerable to attack by the selected faction(s) are listed below and ranked by the " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" layoutX="25.0" layoutY="409.0" mnemonicParsing="false" onAction="#returnButtonListener" prefHeight="54.0" prefWidth="199.0" text="Return to Main Menu">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="findVulnerabilitiesButton" layoutX="663.0" layoutY="409.0" mnemonicParsing="false" onAction="#findVulnerabilitiesButtonListener" prefHeight="54.0" prefWidth="213.0" text="Find More Vulnerabilities">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="124.0" prefHeight="42.0" prefWidth="843.0" text="percentage probability of being attacked next. It is recommended that you reinforce these vulnerabilities." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="162.0" prefHeight="42.0" prefWidth="493.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="threatTable" layoutX="25.0" layoutY="179.0" prefHeight="200.0" prefWidth="852.0">
+        <columns>
+          <TableColumn fx:id="threatProbability" prefWidth="36.800018310546875" text="\%" />
+          <TableColumn fx:id="threatPlanet" prefWidth="107.99999237060547" text="Planet" />
+            <TableColumn fx:id="threatUniverse" prefWidth="60.79998779296875" text="Universe" />
+            <TableColumn fx:id="threatConnectionsFriendly" prefWidth="111.20001220703125" text="Your Connections" />
+            <TableColumn fx:id="threatConnectionsHostile" prefWidth="124.00006103515625" text="Hostile Connections" />
+            <TableColumn fx:id="threatValue" prefWidth="75.20010375976562" text="Total Value" />
+            <TableColumn fx:id="threatI" prefWidth="47.20001220703125" text="I" />
+            <TableColumn fx:id="threatT" prefWidth="49.60003662109375" text="T" />
+            <TableColumn fx:id="threatM" prefWidth="47.20001220703125" text="M" />
+            <TableColumn fx:id="threatC" prefWidth="45.5999755859375" text="C" />
+            <TableColumn fx:id="threatP" prefWidth="42.4000244140625" text="P" />
+            <TableColumn fx:id="threatR" prefWidth="45.5999755859375" text="R" />
+            <TableColumn fx:id="threatA" prefWidth="51.199951171875" text="A (net)" />
+        </columns>
+      </TableView>
+      <Button fx:id="chartButton" layoutX="331.0" layoutY="409.0" mnemonicParsing="false" onAction="#chartButtonListener" prefHeight="54.0" prefWidth="237.0" text="View Chart of Probabilities">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

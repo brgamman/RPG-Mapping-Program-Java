@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="threatInfoAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.threatInfoController">
+   <children>
+      <Label layoutX="92.0" layoutY="24.0" prefHeight="54.0" prefWidth="415.0" text="Multiversal Atlas Program +" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="109.0" prefHeight="42.0" prefWidth="528.0" text="MAP+ can analyze your vulnerabilities by predicting where an enemy" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" layoutX="36.0" layoutY="396.0" mnemonicParsing="false" onAction="#returnButtonListener" prefHeight="54.0" prefWidth="199.0" text="Return to Main Menu">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="findVulnerabilitiesButton" layoutX="365.0" layoutY="396.0" mnemonicParsing="false" onAction="#findVulnerabilitiesButtonListener" prefHeight="54.0" prefWidth="199.0" text="Find Vulnerabilities">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="hostileFaction" layoutX="362.0" layoutY="315.0" prefHeight="26.0" prefWidth="199.0" promptText="Choose an enemy faction" />
+      <RadioButton fx:id="threatSpecified" layoutX="36.0" layoutY="316.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="326.0" text="Check for vulnerabilities against the selected faction:" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="threatType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="threatGeneral" layoutX="36.0" layoutY="275.0" mnemonicParsing="false" selected="true" text="Check for vulnerabilities against all factions." textFill="WHITE" toggleGroup="$threatType">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="35.0" layoutY="139.0" prefHeight="42.0" prefWidth="528.0" text="is most likely to attack your territory based on connectivity and " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="168.0" prefHeight="42.0" prefWidth="528.0" text="planetary information. Are you concerned with general vulnerabilities, " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="197.0" prefHeight="42.0" prefWidth="528.0" text="or threats from a specific hostile faction?" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
