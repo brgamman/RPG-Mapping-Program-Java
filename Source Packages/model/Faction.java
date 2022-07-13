@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Faction {
 
     /**
-     * Name of the planet.
+     * Name of the faction.
      */
     private String name = "";
 
@@ -21,7 +21,7 @@ public class Faction {
     private ObservableList<Planet> territory = FXCollections.observableArrayList();
 
     /**
-     * Getter for the name of the planet.
+     * Getter for the name of the faction.
      */
     public String getName() { return name; }
 
@@ -31,7 +31,7 @@ public class Faction {
     public ObservableList<Planet> getTerritory() { return territory; }
 
     /**
-     * Setter for the name of the planet.
+     * Setter for the name of the faction.
      */
     public void setName(String name) { this.name = name; }
 
